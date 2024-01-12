@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de cadastro</title>
+</head>
+<body>
+    <div class="container"> 
+
+        <div class="esquerda">
+             
+            <div class="titulo"> <h1>Escolha do Plano</h1></div>
+
+            <div class="corpo">
+
+
+                <div class="caixaplano">
+                    <div class="fita1"></div>
+                    <div class="tituloplano"> <h1>Básico</h1></div>
+                    <div class="corpoplano">
+                        <ul>
+                            <li>6 d treinos na semana</li>
+                            <li>Acompanhamento somente p/ inciante</li>
+                            <li>1º plano de treino</li>
+                        </ul>
+                    </div>
+                    <div class="preco"><h1>R$ 60,00</h1></div>
+                </div>
+
+
+                <div class="caixaplano">
+                    <div class="fita2"></div>
+                    <div class="tituloplano"><h1>Padrão</h1></div>
+                    <div class="corpoplano">
+                        <ul>
+                            <li>Plano basico +</li>
+                            <li>Personal Treiner</li>
+                            <li>Troca de plano a cada 3 meses</li>
+                        </ul>
+                    </div>
+                    <div class="preco"><h1>R$ 100,00</h1></div>
+                </div>
+
+
+                <div class="caixaplano">
+                    <div class="fita3"></div>
+                    <div class="tituloplano"><h1>Premium</h1></div>
+                    <div class="corpoplano">
+                        <ul>
+                            <li>Plano padrão +</li>
+                            <li>Nutricionista</li>
+                            <li>Massagem terapia semanal</li>
+                        </ul>
+                    </div>
+                    <div class="preco"><h1>R$ 150,00</h1></div>
+                </div>
+
+            </div>
+
+        </div>
+        
+
+            <div class="formulario">
+                <div class="titulo2">
+                    <h1>Cadastro do aluno:</h1>
+                     
+                </div>
+                <div class="dados">
+                    <form action="SalvarAluno" method="post">
+                        <p>
+                            <label for="nome">Nome:</label><br>
+                            <input class="input" type="text" id="nome" name="nome">
+                        </p><br>
+                        <p>
+                            <label for="idade">Idade:</label><br>
+                            <input class="input" type="text" id="idade" name="idade">
+                        </p><br>
+                        <p>
+                            <label for="cpf">CPF:</label><br>
+                            <input class="input" type="text" id="cpf" name="cpf">
+                        </p><br>
+                        <p>
+                            Genero: <br>
+                            <input type="radio" id="masculino" name="genero" value="Masculino">
+                            <label for="masculino">Masculino</label>
+                            <input type="radio" id="feminino" name="genero" value="Feminino">
+                            <label for="feminino">Feminino</label><br><br>
+                        </p>
+                        <p>
+                            <label >Selecione o plano:</label><br>
+                            <select class="input2" id="plano" name="plano" >
+                                <option  value="0">Selecione o Plano</option>
+                                <option for="plano"value="60">Básico</option>
+                                <option for="plano" value="100">Padrão</option>
+                                <option for="plano" value="150">Premium</option>
+                            </select>
+    
+                        </p><br><br>
+                        <p><input class="botao" type="submit" value="Cadastrar Aluno"> </p>
+                        
+                    </form>
+                </div>
+                
+            </div>
+
+        
+
+            
+     </div>        
+    
+</body>
+</html>
